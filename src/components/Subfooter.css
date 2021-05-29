@@ -1,0 +1,28 @@
+
+.subfooter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    background-color:   #f0f5f5e0;
+    padding-top: 20px;
+}
+.subfooter > div {
+    width: 200px;
+}
+.socialIcon {
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+
+.socialIcon :hover {
+    color: red;
+}
+.socialIcon >.fbIcon :hover {
+color: blue;
+}
+
+
+

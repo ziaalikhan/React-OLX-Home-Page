@@ -1,0 +1,15 @@
+.subNavbar {
+    height: 35px;
+    /* background-color: blue; */
+    position: relative;
+    bottom: 20px;   
+}
+
+.categories{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   padding-top: 5px;
+   padding-left: 20px;
+}

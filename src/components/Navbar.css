@@ -1,0 +1,142 @@
+
+.container {
+	position: relative;
+	margin-top: 100px;
+}
+.container img {
+	display: block;
+	width: 100%;
+}
+nav {
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 2%;
+	height: 70px;
+	background-color:   #f0f5f5e0;
+    box-shadow: 0 0 25px lightgray;
+}
+nav .logo {
+	float: left;
+	width: 20%;
+	height: 80%;
+    margin-top: 3.7px;
+	display: flex;
+	align-items: center;
+}
+
+.countryInput {
+	width: 250px;
+	height: 40px;
+	border: 3px solid black;
+	border-radius: 5px;
+	margin-right: 80px;
+}
+
+.searchInput{
+	width: 450px;
+	height: 40px;
+	border: 3px solid black;
+	border-radius: 5px;
+	/* margin-right: 20px; */
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+nav .links li {
+	list-style: none;
+}
+nav .links p {
+	display: block;
+	/* padding: 1em; */
+	font-size: 16px;
+	/* font-weight: bold; */
+	/* color: #fff; */
+	text-decoration: none;
+    margin-top: 13px;
+}
+.loginBtn:hover {
+text-decoration: 2px solid blue underline;
+}
+.sellBtn{
+	border: 1px solid #6666ff;
+	padding: 6px;
+	background-color: #6666ff;
+	border-radius: 5px;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #6666ff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 4;
+		left: 0;
+		right: 0;
+		top: 60px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		/* justify-content: space-evenly; */
+		/* background-color: rgba(0,0,0,.8); */
+		background-color: #6666ff;
+		overflow: hidden;
+
+		box-sizing: border-box;
+		transition: all .7s ease-in-out;
+	}
+	nav .links p {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}

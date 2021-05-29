@@ -1,0 +1,13 @@
+.loadMoreBtn {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.loadMoreBtn > button {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border: 3px solid black;
+    font-size: 13px;
+    border-radius: 7px;
+}
